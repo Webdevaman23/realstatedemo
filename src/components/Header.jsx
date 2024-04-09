@@ -1,6 +1,7 @@
-import { Avatar, Button, Dropdown, Navbar, TextInput } from "flowbite-react";
+import { Avatar, Button, Dropdown, Navbar } from "flowbite-react";
 import React from "react";
 import { AiOutlineSearch } from "react-icons/ai";
+import { HiLogout, HiViewGrid } from "react-icons/hi";
 
 export default function Header() {
   return (
@@ -12,18 +13,43 @@ export default function Header() {
         Demo
       </div>
 
-      <Button className="w-12 h-10 lg:hidden" color="gray" pill>
+      {/* <Button className="w-12 h-10 lg:hidden" color="gray" pill>
         <AiOutlineSearch />
-      </Button>
+      </Button> */}
 
-      <div className="flex justify-center gap-10 tex-lg font-semibold">
-        <div >Home</div>
-        <div >Properties</div>
-        <div >Contact Us</div>
-        <div >About Us</div>
+      <div className="hidden md:flex items-center gap-6  mr-6 font-medium">
+        <div>
+          <Dropdown label="PROPERTIES" inline>
+            <Dropdown.Item >FEATURED LISTINGS</Dropdown.Item>
+            <Dropdown.Item >PAST SALES</Dropdown.Item>
+          </Dropdown>
+        </div>
+        <div>HOME SEARCH</div>
+        <div>CONTACT US</div>
+        <div>ABOUT US</div>
       </div>
-      <Avatar img="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png" alt="avatar of Jese" rounded />
-     
+
+      <Dropdown
+        arrowIcon={false}
+        inline
+        label={
+          <Avatar
+            img="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png"
+            alt="avatar of Jese"
+            rounded
+          />
+        }
+      >
+        <Dropdown.Header>
+          <span className="block text-sm">Bonnie Green</span>
+          <span className="block truncate text-sm font-medium">
+            bonnie@flowbite.com
+          </span>
+        </Dropdown.Header>
+        <Dropdown.Item icon={HiViewGrid}>Dashboard</Dropdown.Item>
+        <Dropdown.Divider />
+        <Dropdown.Item icon={HiLogout}>Sign out</Dropdown.Item>
+      </Dropdown>
     </Navbar>
   );
 }
