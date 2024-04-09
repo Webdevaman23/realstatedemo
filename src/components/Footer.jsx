@@ -23,7 +23,7 @@ const Footer = () => {
             <p>Pembroke Pines, FL 33024</p>
           </div>
           <nav className="mt-4 md:mt-0">
-            <ul className="flex flex-col md:flex-row space-y-2 md:space-x-4">
+            <ul className="flex flex-col space-y-2">
               <li>
                 <a href="#" className="hover:text-gray-400">
                   HOME
