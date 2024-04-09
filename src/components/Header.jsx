@@ -1,11 +1,11 @@
 import { Avatar, Button, Dropdown, Navbar } from "flowbite-react";
 import React from "react";
-import { AiOutlineSearch } from "react-icons/ai";
+// import { AiOutlineSearch } from "react-icons/ai";
 import { HiLogout, HiViewGrid } from "react-icons/hi";
 
 export default function Header() {
   return (
-    <Navbar className="border-b-2">
+    <Navbar fluid={true} rounded={true} className="border-b-2">
       <div className="self-center whitespace-nowrap text-sm sm:text-xl font-semibold">
         <span className="px-2 py-1 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-lg text-white">
           Real State
@@ -17,7 +17,7 @@ export default function Header() {
         <AiOutlineSearch />
       </Button> */}
 
-      <div className="hidden md:flex items-center gap-6  mr-6 font-medium">
+      <div className="hidden lg:flex items-center gap-6  mr-6 font-medium">
         <div>
           <Dropdown label="PROPERTIES" inline>
             <Dropdown.Item >FEATURED LISTINGS</Dropdown.Item>
