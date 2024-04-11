@@ -18,3 +18,27 @@
     left: 20vw;
     right: 20vw;
 }
+
+.vertical-line {
+    width: 2px;
+    height: 100px;
+    background-color: #000;
+    margin: 0 auto;
+    transform: rotate(180deg);
+}
+
+.font{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: xx-large;
+}
+
+.font1{
+    font-size: xx-large;
+}
+
+.margin-left{
+    margin-left: 100px;
+}
+.margin-right{
+    margin-right: 100px;
+}
