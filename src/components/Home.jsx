@@ -1,4 +1,7 @@
 import React from "react";
+import photo1 from "../images/first.jpg";
+import photo2 from "../images/second.jpg";
+import photo3 from "../images/third.jpg";
 
 const Home = () => {
   return (
@@ -81,7 +84,23 @@ const Home = () => {
             <h3 className="font-normal">Years of Experience</h3>
           </div>
         </div>
-        <div></div>
+        <div class="flex justify-around flex-wrap">
+          <img
+            src={photo1}
+            alt="Photo 1"
+            class="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg"
+          />
+          <img
+            src={photo2}
+            alt="Photo 2"
+            class="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg"
+          />
+          <img
+            src={photo3}
+            alt="Photo 3"
+            class="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg"
+          />
+        </div>
       </div>
     </div>
   );
