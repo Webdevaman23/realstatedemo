@@ -20,8 +20,8 @@ export default function Header() {
       <div className="hidden lg:flex items-center gap-6  mr-6 font-medium">
         <div>
           <Dropdown label="PROPERTIES" inline>
-            <Dropdown.Item >FEATURED LISTINGS</Dropdown.Item>
-            <Dropdown.Item >PAST SALES</Dropdown.Item>
+            <Dropdown.Item>FEATURED LISTINGS</Dropdown.Item>
+            <Dropdown.Item>PAST SALES</Dropdown.Item>
           </Dropdown>
         </div>
         <div>HOME SEARCH</div>
