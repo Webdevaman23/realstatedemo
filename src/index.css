@@ -2,43 +2,43 @@
 @tailwind components;
 @tailwind utilities;
 
-.image{
-    background-image: url(/src/images/realstate.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    width: 100vw;
-    filter: brightness(50%);
+.image {
+  background-image: url(/src/images/realstate.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100vw;
+  filter: brightness(50%);
 }
 
-.dashboard-title{
-    position: absolute;
-    top: 40vh;
-    left: 20vw;
-    right: 20vw;
+.dashboard-title {
+  position: absolute;
+  top: 40vh;
+  left: 20vw;
+  right: 20vw;
 }
 
 .vertical-line {
-    width: 2px;
-    height: 100px;
-    background-color: #000;
-    margin: 0 auto;
-    transform: rotate(180deg);
+  width: 2px;
+  height: 100px;
+  background-color: #000;
+  margin: 0 auto;
+  transform: rotate(180deg);
 }
 
-.font{
-    font-family: 'Courier New', Courier, monospace;
-    font-size: xx-large;
+.font {
+  font-family: "Courier New", Courier, monospace;
+  font-size: xx-large;
 }
 
-.font1{
-    font-size: xx-large;
+.font1 {
+  font-size: xx-large;
 }
 
-.margin-left{
-    margin-left: 100px;
+.margin-left {
+  margin-left: 100px;
 }
-.margin-right{
-    margin-right: 100px;
+.margin-right {
+  margin-right: 100px;
 }
