@@ -17,7 +17,7 @@ const Home = () => {
           <div className="mt-5">
             <form className="max-w-md mx-auto">
               <label
-                for="default-search"
+                htmlFor="default-search"
                 className="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white"
               >
                 Search
@@ -33,9 +33,9 @@ const Home = () => {
                   >
                     <path
                       stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
                       d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
                     />
                   </svg>
@@ -84,22 +84,28 @@ const Home = () => {
             <h3 className="font-normal">Years of Experience</h3>
           </div>
         </div>
-        <div class="flex justify-around flex-wrap">
-          <img
-            src={photo1}
-            alt="Photo 1"
-            class="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg"
-          />
-          <img
-            src={photo2}
-            alt="Photo 2"
-            class="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg"
-          />
-          <img
-            src={photo3}
-            alt="Photo 3"
-            class="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg"
-          />
+        <div className="flex justify-around flex-wrap">
+          <div className="text-center">
+            <img
+              src={photo1}
+              alt="Photo 1"
+              className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg"
+            />
+          </div>
+          <div className="text-center">
+            <img
+              src={photo2}
+              alt="Photo 2"
+              className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg"
+            />
+          </div>
+          <div className="text-center">
+            <img
+              src={photo3}
+              alt="Photo 3"
+              className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg"
+            />
+          </div>
         </div>
       </div>
     </div>
