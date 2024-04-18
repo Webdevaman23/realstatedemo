@@ -2,6 +2,8 @@ import React from "react";
 import photo1 from "../images/first.jpg";
 import photo2 from "../images/second.jpg";
 import photo3 from "../images/third.jpg";
+import { Card } from "flowbite-react";
+import {Button} from "flowbite-react";
 
 const Home = () => {
   return (
@@ -58,7 +60,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div>
+      <div className="my-5">
         <div className="flex flex-col text-center m-5">
           <h1 className="font-semibold text-2xl font m-10 flex flex-col">
             <span>REAL STATE</span>
@@ -84,23 +86,66 @@ const Home = () => {
             <h3 className="font-normal">Years of Experience</h3>
           </div>
         </div>
-        <div class="flex justify-around flex-wrap">
-          <img
-            src={photo1}
-            alt="Photo 1"
-            class="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg"
-          />
-          <img
-            src={photo2}
-            alt="Photo 2"
-            class="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg"
-          />
-          <img
-            src={photo3}
-            alt="Photo 3"
-            class="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg"
-          />
+        <div class="flex justify-around flex-wrap ">
+          <Card
+            className="max-w-sm"
+            imgAlt="Meaningful alt text for an image that is not purely decorative"
+            imgSrc={photo1}
+          >
+            <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+              BUY
+            </h5>
+          </Card>
+          <Card
+            className="max-w-sm"
+            imgAlt="Meaningful alt text for an image that is not purely decorative"
+            imgSrc={photo2}
+          >
+            <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+              RENT
+            </h5>
+          </Card>
+          <Card
+            className="max-w-sm"
+            imgAlt="Meaningful alt text for an image that is not purely decorative"
+            imgSrc={photo3}
+          >
+            <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+              SELL
+            </h5>
+          </Card>
         </div>
+      </div>
+      <div className=" flex" style={{backgroundColor: "#ededed"}}>
+          <div className="flex flex-col gap-10 m-10 p-10 flex-wrap flex-1">
+          <h1 className="font-bold font text-2xl">MEET THE REAL STATE CO</h1>
+          <hr/>
+            <p className="">
+              At The Nice Agent Co., we focus on people, not properties. We
+              believe in punctuality, loyalty, respect, integrity, love, fun,
+              and kindness, and we put these values at the forefront of every
+              relationship. Our team works hard and recognizes that going the
+              extra mile for our clients often makes the difference. That’s why
+              every agent, staff member, and vendor we work with lives by our
+              slogan: “I will work until you smile.”
+            </p>
+            <p>
+              Founded by Carl Christian, who has been in the real estate
+              business since 2004, The Nice Agent Co. has one goal — to provide
+              the most reliable concierge real estate service in South Florida.
+            </p>
+            <p>
+              We take the time to understand your needs and respond to them
+              quickly, accurately, and positively. We strive to make you feel
+              comfortable through each step of the buying or selling process.
+              And we are committed to going above and beyond to ensure your
+              goals are met — and putting a smile on your face in the meantime.
+            </p>
+            <Button className="w-36" color="blue">
+              MEET THE TEAM
+            </Button>
+          </div>
+        <div className="image4 flex-1"></div>
       </div>
     </div>
   );
