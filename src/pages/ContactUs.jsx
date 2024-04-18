@@ -5,7 +5,7 @@ const ContactUs = () => {
     <div className="bg-gray-100 py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row items-center">
         {/* Contact Form */}
-        <form className="w-full lg:w-1/2 bg-blue-100 p-6 rounded-md shadow-md mb-8 lg:mb-0">
+        <form className="w-full lg:w-1/2 bg-blue-100 p-6 rounded-md shadow-md mb-8 lg:mb-0 lg:mr-4">
           <h2 className="text-lg font-semibold text-gray-800 mb-4">
             GET IN TOUCH
           </h2>

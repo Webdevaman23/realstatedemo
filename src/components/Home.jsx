@@ -1,7 +1,13 @@
 import React from "react";
+import { Carousel } from "flowbite-react";
 import photo1 from "../images/first.jpg";
 import photo2 from "../images/second.jpg";
 import photo3 from "../images/third.jpg";
+import photo4 from "../images/C1.jpg";
+import photo5 from "../images/C2.jpg";
+import photo6 from "../images/C3.jpg";
+import photo7 from "../images/C4.jpg";
+import photo8 from "../images/C5.jpg";
 
 const Home = () => {
   return (
@@ -84,6 +90,17 @@ const Home = () => {
             <h3 className="font-normal">Years of Experience</h3>
           </div>
         </div>
+
+        <div className="h-56 sm:h-64 xl:h-80 2xl:h-96">
+          <Carousel slide={false}>
+            <img src={photo4} alt="..." />
+            <img src={photo5} alt="..." />
+            <img src={photo6} alt="..." />
+            <img src={photo7} alt="..." />
+            <img src={photo8} alt="..." />
+          </Carousel>
+        </div>
+
         <div className="flex justify-around flex-wrap">
           <div className="text-center">
             <img
