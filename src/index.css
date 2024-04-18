@@ -42,13 +42,3 @@
 .margin-right {
   margin-right: 100px;
 }
-
-.image4 {
-  background-image: url(/src/images/fourth.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 100vh;
-  width: 100vw;
-}
-
-
